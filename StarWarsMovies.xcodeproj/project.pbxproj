@@ -56,15 +56,71 @@
 		874F84472291974B0022CC0A /* StarWarsMovies */ = {
 			isa = PBXGroup;
 			children = (
+				874F8463229199660022CC0A /* Utility */,
+				874F84622291995C0022CC0A /* Storyboard */,
+				874F8461229199550022CC0A /* Resource */,
+				874F84602291994D0022CC0A /* Remote */,
+				874F845F229199410022CC0A /* Model */,
+				874F845E2291993C0022CC0A /* Extension */,
+				874F845D229197AB0022CC0A /* Controller */,
 				874F84482291974B0022CC0A /* AppDelegate.swift */,
-				874F844A2291974B0022CC0A /* ViewController.swift */,
-				874F844C2291974B0022CC0A /* Main.storyboard */,
-				874F84522291974C0022CC0A /* Assets.xcassets */,
-				874F84542291974C0022CC0A /* LaunchScreen.storyboard */,
-				874F84572291974C0022CC0A /* Info.plist */,
-				874F844F2291974B0022CC0A /* StarWarsMovies.xcdatamodeld */,
 			);
 			path = StarWarsMovies;
+			sourceTree = "<group>";
+		};
+		874F845D229197AB0022CC0A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				874F844A2291974B0022CC0A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		874F845E2291993C0022CC0A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		874F845F229199410022CC0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				874F844F2291974B0022CC0A /* StarWarsMovies.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		874F84602291994D0022CC0A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		874F8461229199550022CC0A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				874F84572291974C0022CC0A /* Info.plist */,
+				874F84522291974C0022CC0A /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		874F84622291995C0022CC0A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				874F84542291974C0022CC0A /* LaunchScreen.storyboard */,
+				874F844C2291974B0022CC0A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		874F8463229199660022CC0A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
-				INFOPLIST_FILE = StarWarsMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StarWarsMovies/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K8L59XB48;
-				INFOPLIST_FILE = StarWarsMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StarWarsMovies/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
