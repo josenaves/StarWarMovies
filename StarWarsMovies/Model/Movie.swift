@@ -19,11 +19,12 @@ class Movie: NSManagedObject {
 
     static let dateFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.dateFormat = "dd/MM/YYYY" // TODO check the mask
+        df.dateFormat = "YYYY-MM-dd"
         return df
     }()
     
     func update(with jsonDictionary: [String: Any]) throws {
+        
         guard let title = jsonDictionary["title"] as? String,
             let director = jsonDictionary["director"] as? String,
             let producer = jsonDictionary["producer"] as? String,

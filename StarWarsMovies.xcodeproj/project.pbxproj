@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		874F84492291974B0022CC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F84482291974B0022CC0A /* AppDelegate.swift */; };
-		874F844B2291974B0022CC0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F844A2291974B0022CC0A /* ViewController.swift */; };
+		874F844B2291974B0022CC0A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F844A2291974B0022CC0A /* MovieListViewController.swift */; };
 		874F844E2291974B0022CC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874F844C2291974B0022CC0A /* Main.storyboard */; };
 		874F84512291974B0022CC0A /* StarWarsMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 874F844F2291974B0022CC0A /* StarWarsMovies.xcdatamodeld */; };
 		874F84532291974C0022CC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874F84522291974C0022CC0A /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		874F84452291974B0022CC0A /* StarWarsMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		874F84482291974B0022CC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		874F844A2291974B0022CC0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		874F844A2291974B0022CC0A /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		874F844D2291974B0022CC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		874F84502291974B0022CC0A /* StarWarsMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWarsMovies.xcdatamodel; sourceTree = "<group>"; };
 		874F84522291974C0022CC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		874F845D229197AB0022CC0A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				874F844A2291974B0022CC0A /* ViewController.swift */,
+				874F844A2291974B0022CC0A /* MovieListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874F844B2291974B0022CC0A /* ViewController.swift in Sources */,
+				874F844B2291974B0022CC0A /* MovieListViewController.swift in Sources */,
 				874F84492291974B0022CC0A /* AppDelegate.swift in Sources */,
 				878E68A22291ABF100B50F09 /* DataProvider.swift in Sources */,
 				878E68A72291AFA200B50F09 /* CoreDataStack.swift in Sources */,
