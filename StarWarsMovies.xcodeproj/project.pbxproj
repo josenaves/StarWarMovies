@@ -13,6 +13,7 @@
 		874F84512291974B0022CC0A /* StarWarsMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 874F844F2291974B0022CC0A /* StarWarsMovies.xcdatamodeld */; };
 		874F84532291974C0022CC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874F84522291974C0022CC0A /* Assets.xcassets */; };
 		874F84562291974C0022CC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874F84542291974C0022CC0A /* LaunchScreen.storyboard */; };
+		877256B52294C4950077EF8B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877256B42294C4950077EF8B /* MovieDetailsViewController.swift */; };
 		878E68A22291ABF100B50F09 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E68A12291ABF100B50F09 /* DataProvider.swift */; };
 		878E68A42291AC5600B50F09 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E68A32291AC5600B50F09 /* Movie.swift */; };
 		878E68A72291AFA200B50F09 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E68A62291AFA200B50F09 /* CoreDataStack.swift */; };
@@ -28,6 +29,7 @@
 		874F84522291974C0022CC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874F84552291974C0022CC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874F84572291974C0022CC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		877256B42294C4950077EF8B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		878E68A12291ABF100B50F09 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		878E68A32291AC5600B50F09 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		878E68A62291AFA200B50F09 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				874F844A2291974B0022CC0A /* MovieListViewController.swift */,
+				877256B42294C4950077EF8B /* MovieDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877256B52294C4950077EF8B /* MovieDetailsViewController.swift in Sources */,
 				874F844B2291974B0022CC0A /* MovieListViewController.swift in Sources */,
 				874F84492291974B0022CC0A /* AppDelegate.swift in Sources */,
 				878E68A22291ABF100B50F09 /* DataProvider.swift in Sources */,

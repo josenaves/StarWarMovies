@@ -9,8 +9,14 @@
 import UIKit
 import CoreData
 
+protocol MovieSelectionDelegate: class {
+    func movieSelected(_ selectedMovie: Movie)
+}
+
 class MovieListViewController: UITableViewController {
     
+    weak var delegate: MovieSelectionDelegate?
+
     var dataProvider: DataProvider!
     
     static let dateFormatterPrint = DateFormatter()
@@ -65,6 +71,15 @@ class MovieListViewController: UITableViewController {
         cell.detailTextLabel?.text = movie.director
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMovie = fetchedResultsController.object(at: indexPath)
+        print("Selected: \(selectedMovie)")
+        print("delegate: \(String(describing: delegate))")
+        
+        delegate?.movieSelected(selectedMovie)
+    }
+
 }
 
 extension MovieListViewController: NSFetchedResultsControllerDelegate {

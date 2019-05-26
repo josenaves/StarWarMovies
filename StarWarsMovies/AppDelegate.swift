@@ -15,12 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var coreDataStack = CoreDataStack.shared
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let viewController = (window?.rootViewController as? UINavigationController)?.topViewController as? MovieListViewController
-        viewController?.dataProvider = DataProvider(persistentContainer: coreDataStack.persistentContainer, api: StarWarsApi.shared)
+        let rootViewController = window?.rootViewController as? UINavigationController
+        let listViewController = rootViewController?.topViewController as? MovieListViewController
         
+        listViewController?.dataProvider = DataProvider(persistentContainer: coreDataStack.persistentContainer, api: StarWarsApi.shared)
+        
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailsViewController : MovieDetailsViewController = mainStoryboard.instantiateViewController(withIdentifier: "DetailsViewController") as! MovieDetailsViewController
+        
+        listViewController?.delegate = detailsViewController
+
         return true
     }
 
