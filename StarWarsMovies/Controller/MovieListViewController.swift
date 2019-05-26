@@ -53,7 +53,7 @@ class MovieListViewController: UITableViewController {
     
         }
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 0
     }
@@ -74,12 +74,19 @@ class MovieListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedMovie = fetchedResultsController.object(at: indexPath)
-        print("Selected: \(selectedMovie)")
-        print("delegate: \(String(describing: delegate))")
-        
-        delegate?.movieSelected(selectedMovie)
+        if delegate != nil {
+            delegate?.movieSelected(selectedMovie)
+        }
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "detailsSegue" {
+            let vc = segue.destination as! MovieDetailsViewController
+            self.delegate = vc
+        }
+    }
 }
 
 extension MovieListViewController: NSFetchedResultsControllerDelegate {

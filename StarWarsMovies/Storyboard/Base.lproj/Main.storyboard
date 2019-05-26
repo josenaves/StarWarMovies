@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="wja-Xt-JUG" kind="show" identifier="segueDetails" id="65h-aa-YRY"/>
+                                    <segue destination="wja-Xt-JUG" kind="show" identifier="detailsSegue" id="65h-aa-YRY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -112,10 +112,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RKO-nu-hvH">
-                                <rect key="frame" x="20" y="303" width="374" height="359"/>
+                                <rect key="frame" x="20" y="303" width="374" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April, 2, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-Cl-N5M">
@@ -152,13 +152,17 @@
                             <constraint firstItem="Qa5-kp-a3Y" firstAttribute="top" secondItem="b35-Zr-4QS" secondAttribute="top" constant="18" id="lgG-LZ-F1y"/>
                             <constraint firstItem="RKO-nu-hvH" firstAttribute="trailing" secondItem="vkM-ui-UOC" secondAttribute="trailingMargin" id="mrw-18-mac"/>
                             <constraint firstItem="HCI-1d-Ox2" firstAttribute="leading" secondItem="vkM-ui-UOC" secondAttribute="leadingMargin" id="nxu-6f-j0k"/>
-                            <constraint firstItem="b35-Zr-4QS" firstAttribute="bottom" secondItem="RKO-nu-hvH" secondAttribute="bottom" constant="200" id="syH-c0-d4M"/>
+                            <constraint firstItem="b35-Zr-4QS" firstAttribute="bottom" secondItem="RKO-nu-hvH" secondAttribute="bottom" constant="-7" id="syH-c0-d4M"/>
                             <constraint firstItem="sbd-eZ-5Cb" firstAttribute="leading" secondItem="aOZ-uD-NZh" secondAttribute="leading" id="yqS-1b-NaO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b35-Zr-4QS"/>
                     </view>
                     <connections>
-                        <outlet property="labelMovieName" destination="Qa5-kp-a3Y" id="qhn-sh-mm8"/>
+                        <outlet property="labelDirectorName" destination="sbd-eZ-5Cb" id="Poc-Qx-7w0"/>
+                        <outlet property="labelMovieName" destination="Qa5-kp-a3Y" id="H2T-53-hsC"/>
+                        <outlet property="labelPlot" destination="RKO-nu-hvH" id="F0H-Jc-ezX"/>
+                        <outlet property="labelProducerName" destination="aOZ-uD-NZh" id="VaD-Ip-VgA"/>
+                        <outlet property="labelReleaseDate" destination="3eM-Cl-N5M" id="HgR-sp-aK0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bry-7O-OE4" userLabel="First Responder" sceneMemberID="firstResponder"/>

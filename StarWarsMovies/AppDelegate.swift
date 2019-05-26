@@ -21,11 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         listViewController?.dataProvider = DataProvider(persistentContainer: coreDataStack.persistentContainer, api: StarWarsApi.shared)
         
-        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let detailsViewController : MovieDetailsViewController = mainStoryboard.instantiateViewController(withIdentifier: "DetailsViewController") as! MovieDetailsViewController
-        
-        listViewController?.delegate = detailsViewController
-
         return true
     }
 
