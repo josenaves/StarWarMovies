@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8722EA62229CB5AD000A3839 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722EA61229CB5AD000A3839 /* UIViewController+Extensions.swift */; };
 		874F84492291974B0022CC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F84482291974B0022CC0A /* AppDelegate.swift */; };
 		874F844B2291974B0022CC0A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F844A2291974B0022CC0A /* MovieListViewController.swift */; };
 		874F844E2291974B0022CC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874F844C2291974B0022CC0A /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8722EA61229CB5AD000A3839 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		874F84452291974B0022CC0A /* StarWarsMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		874F84482291974B0022CC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		874F844A2291974B0022CC0A /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		874F845E2291993C0022CC0A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8722EA61229CB5AD000A3839 /* UIViewController+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				874F844B2291974B0022CC0A /* MovieListViewController.swift in Sources */,
 				874F84492291974B0022CC0A /* AppDelegate.swift in Sources */,
 				878E68A22291ABF100B50F09 /* DataProvider.swift in Sources */,
+				8722EA62229CB5AD000A3839 /* UIViewController+Extensions.swift in Sources */,
 				878E68A72291AFA200B50F09 /* CoreDataStack.swift in Sources */,
 				878E68A92291B19700B50F09 /* StarWarsApi.swift in Sources */,
 				874F84512291974B0022CC0A /* StarWarsMovies.xcdatamodeld in Sources */,

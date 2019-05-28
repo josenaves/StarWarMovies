@@ -49,8 +49,9 @@ class MovieListViewController: UITableViewController {
 
         self.title = "Star Wars Movies"
         dataProvider.fetchMovies { (error) in
-            // TODO display error
-    
+            if error != nil {
+                self.showAlertMessage(message: "Error fetching movies!")
+            }
         }
     }
     
