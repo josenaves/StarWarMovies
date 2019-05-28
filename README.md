@@ -1,6 +1,6 @@
-# StarWarMovies
+# StarWarsMovies
 
-Udacity iOS NanoDegree project capstone project. It uses remote APIs and Core Data to fetch all movie data from (SWAP)[https://swapi.co/]
+Udacity iOS NanoDegree project capstone project. It uses remote APIs and Core Data to fetch all movie data from [SWAPI](https://swapi.co/)
 
 This app fetches and stores Star Wars movie data from SWAPI. It allows users to list all Star War movies and see its data details.
 
