@@ -46,9 +46,13 @@ class MovieListViewController: UITableViewController {
         super.viewDidLoad()
         
         MovieListViewController.dateFormatterPrint.dateFormat = "yyyy"
-
         self.title = "Star Wars Movies"
+        
+        self.showSpinner(onView: self.view)
+        
         dataProvider.fetchMovies { (error) in
+            self.removeSpinner()
+            
             if error != nil {
                 self.showAlertMessage(message: "Error fetching movies!")
             }
